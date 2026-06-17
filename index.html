@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Studio — Redefine Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ░░ CURSOR ░░ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ░░ NOISE OVERLAY ░░ -->
+    <div class="noise-overlay"></div>
+
+    <!-- ░░ NAVBAR ░░ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <span class="logo-mark">N</span>
+          <span class="logo-text">Nexus Studio</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Get Started</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          <span>Software Studio · Est. 2024</span>
+        </div>
+        <h1 class="hero-title reveal-up">
+          <em>We Build</em><br />
+          <span class="title-outline">Digital</span><br />
+          <span class="title-gold">Experiences.</span>
+        </h1>
+        <p class="hero-sub reveal-up delay-1">
+          Nexus Studio crafts high-performance web products that elevate brands,
+          accelerate growth, and leave a lasting impression.
+        </p>
+        <div class="hero-actions reveal-up delay-2">
+          <a href="#services" class="btn-primary">
+            <span>Explore Work</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </a>
+          <a href="#pricing" class="btn-ghost">View Pricing</a>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal-up delay-3">
+        <div class="stat">
+          <span class="stat-num" data-target="120">0</span
+          ><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span
+          ><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span
+          ><span class="stat-suffix">x</span>
+          <span class="stat-label">Avg. ROI Delivered</span>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ░░ MARQUEE STRIP ░░ -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Web Design</span><span class="marquee-dot">✦</span>
+        <span>Mobile Apps</span><span class="marquee-dot">✦</span>
+        <span>UI/UX Strategy</span><span class="marquee-dot">✦</span>
+        <span>E-Commerce</span><span class="marquee-dot">✦</span>
+        <span>SaaS Products</span><span class="marquee-dot">✦</span>
+        <span>Brand Identity</span><span class="marquee-dot">✦</span>
+        <span>Web Design</span><span class="marquee-dot">✦</span>
+        <span>Mobile Apps</span><span class="marquee-dot">✦</span>
+        <span>UI/UX Strategy</span><span class="marquee-dot">✦</span>
+        <span>E-Commerce</span><span class="marquee-dot">✦</span>
+        <span>SaaS Products</span><span class="marquee-dot">✦</span>
+        <span>Brand Identity</span><span class="marquee-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ░░ SERVICES ░░ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">
+            Services that<br /><em>Move the Needle</em>
+          </h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal-up" data-delay="0">
+            <div class="card-number">01</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="4"
+                  y="8"
+                  width="40"
+                  height="28"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16 44h16M24 36v8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 20l5 5 8-10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <rect
+                  x="28"
+                  y="18"
+                  width="10"
+                  height="2"
+                  rx="1"
+                  fill="currentColor"
+                />
+                <rect
+                  x="28"
+                  y="23"
+                  width="7"
+                  height="2"
+                  rx="1"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h3>Web Design &amp; Development</h3>
+            <p>
+              Pixel-perfect, blazing-fast websites engineered to convert
+              visitors into customers. We blend design artistry with engineering
+              precision.
+            </p>
+            <div class="card-tags">
+              <span>React</span><span>Next.js</span><span>WordPress</span>
+            </div>
+            <a href="#contact" class="card-link">
+              Start a Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <div class="card-glow"></div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="100">
+            <div class="card-number">02</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="14"
+                  y="4"
+                  width="20"
+                  height="36"
+                  rx="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="24" cy="34" r="2" fill="currentColor" />
+                <path
+                  d="M20 10h8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Native and cross-platform mobile experiences that feel at home on
+              any device. iOS and Android, done right the first time.
+            </p>
+            <div class="card-tags">
+              <span>React Native</span><span>Flutter</span
+              ><span>iOS/Android</span>
+            </div>
+            <a href="#contact" class="card-link">
+              Start a Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <div class="card-glow"></div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="200">
+            <div class="card-number">03</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M24 8v6M24 34v6M8 24h6M34 24h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>UI/UX Design &amp; Strategy</h3>
+            <p>
+              User research, wireframing, prototyping, and polished final
+              designs. We create interfaces that are intuitive, beautiful, and
+              data-driven.
+            </p>
+            <div class="card-tags">
+              <span>Figma</span><span>User Research</span
+              ><span>Prototyping</span>
+            </div>
+            <a href="#contact" class="card-link">
+              Start a Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <div class="card-glow"></div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="300">
+            <div class="card-number">04</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="4"
+                  y="14"
+                  width="40"
+                  height="26"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 14V10a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M4 24h40" stroke="currentColor" stroke-width="2" />
+                <rect
+                  x="18"
+                  y="31"
+                  width="12"
+                  height="3"
+                  rx="1.5"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h3>SaaS &amp; E-Commerce</h3>
+            <p>
+              Full-stack product development for SaaS platforms and online
+              stores. Scalable, secure, and built for growth from day one.
+            </p>
+            <div class="card-tags">
+              <span>Node.js</span><span>Stripe</span><span>Shopify</span>
+            </div>
+            <a href="#contact" class="card-link">
+              Start a Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <div class="card-glow"></div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="400">
+            <div class="card-number">05</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M8 36L24 12l16 24H8z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <circle cx="24" cy="32" r="2" fill="currentColor" />
+                <path
+                  d="M24 20v8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Brand Identity &amp; Visual Design</h3>
+            <p>
+              Logos, color systems, typography, and brand guidelines that tell
+              your story and make you unmistakable in a crowded market.
+            </p>
+            <div class="card-tags">
+              <span>Branding</span><span>Logo Design</span
+              ><span>Style Guide</span>
+            </div>
+            <a href="#contact" class="card-link">
+              Start a Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <div class="card-glow"></div>
+          </div>
+
+          <div
+            class="service-card service-card--cta reveal-up"
+            data-delay="500"
+          >
+            <div class="cta-card-inner">
+              <span class="cta-tag">Have a Project?</span>
+              <h3>Let's Build Something Extraordinary</h3>
+              <p>
+                Every great digital product starts with a conversation. Tell us
+                your vision.
+              </p>
+              <a href="#contact" class="btn-primary btn-primary--dark">
+                <span>Contact Us</span>
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+            <div class="card-glow card-glow--gold"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ ABOUT STRIP ░░ -->
+    <section class="about-strip" id="about">
+      <div class="container">
+        <div class="about-inner reveal-up">
+          <div class="about-text">
+            <span class="section-tag">Our Philosophy</span>
+            <h2 class="section-title">
+              Craft is not a feature.<br /><em>It's the product.</em>
+            </h2>
+            <p>
+              We're a boutique digital studio that treats every line of code and
+              every pixel as an opportunity to create something worth
+              remembering. No templates. No shortcuts. Just obsessive attention
+              to craft.
+            </p>
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <span>Design-First</span>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <span>Performance-Obsessed</span>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <span>Results-Driven</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="av-box av-box-1">
+              <span>Strategy</span>
+            </div>
+            <div class="av-box av-box-2">
+              <span>Design</span>
+            </div>
+            <div class="av-box av-box-3">
+              <span>Build</span>
+            </div>
+            <div class="av-box av-box-4">
+              <span>Launch</span>
+            </div>
+            <div class="av-connector av-connector-1"></div>
+            <div class="av-connector av-connector-2"></div>
+            <div class="av-connector av-connector-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ PRICING ░░ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Transparent Pricing</span>
+          <h2 class="section-title">Choose Your<br /><em>Growth Plan</em></h2>
+          <p class="section-sub">
+            No hidden fees. No surprises. Just clear value at every tier.
+          </p>
+        </div>
+
+        <div class="pricing-toggle reveal-up">
+          <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+          <button
+            class="toggle-switch"
+            id="billingToggle"
+            aria-label="Toggle billing"
+          >
+            <div class="toggle-thumb"></div>
+          </button>
+          <span class="toggle-label" id="annualLabel"
+            >Annual <em class="save-badge">Save 20%</em></span
+          >
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card reveal-up" data-delay="0">
+            <div class="price-badge">Starter</div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="price-num monthly-price">999</span>
+              <span class="price-num annual-price hidden">799</span>
+              <div class="price-period">/project</div>
+            </div>
+            <p class="price-desc">
+              Perfect for startups and small businesses launching their first
+              digital product.
+            </p>
+            <ul class="price-features">
+              <li><span class="check">✓</span> Up to 5 pages</li>
+              <li><span class="check">✓</span> Mobile responsive design</li>
+              <li><span class="check">✓</span> Basic SEO setup</li>
+              <li><span class="check">✓</span> 2 rounds of revisions</li>
+              <li><span class="check">✓</span> 30-day support</li>
+              <li class="disabled">
+                <span class="cross">✕</span> Custom animations
+              </li>
+              <li class="disabled">
+                <span class="cross">✕</span> CMS integration
+              </li>
+            </ul>
+            <a href="#contact" class="btn-outline">Get Started</a>
+          </div>
+
+          <div
+            class="pricing-card pricing-card--featured reveal-up"
+            data-delay="150"
+          >
+            <div class="featured-glow"></div>
+            <div class="price-badge">
+              Professional <span class="hot-badge">Popular</span>
+            </div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="price-num monthly-price">2,499</span>
+              <span class="price-num annual-price hidden">1,999</span>
+              <div class="price-period">/project</div>
+            </div>
+            <p class="price-desc">
+              For growing businesses that need a powerful, fully-featured
+              digital presence.
+            </p>
+            <ul class="price-features">
+              <li><span class="check">✓</span> Up to 15 pages</li>
+              <li><span class="check">✓</span> Advanced UI/UX design</li>
+              <li><span class="check">✓</span> Custom animations</li>
+              <li><span class="check">✓</span> CMS integration</li>
+              <li><span class="check">✓</span> Full SEO optimization</li>
+              <li><span class="check">✓</span> 5 rounds of revisions</li>
+              <li><span class="check">✓</span> 90-day support</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Get Started</a>
+          </div>
+
+          <div class="pricing-card reveal-up" data-delay="300">
+            <div class="price-badge">Enterprise</div>
+            <div class="price-amount">
+              <span class="currency"></span>
+              <span class="price-num monthly-price" style="font-size: 2.8rem"
+                >Custom</span
+              >
+              <span
+                class="price-num annual-price hidden"
+                style="font-size: 2.8rem"
+                >Custom</span
+              >
+              <div class="price-period">pricing</div>
+            </div>
+            <p class="price-desc">
+              For established companies with complex needs and big visions.
+              Let's talk.
+            </p>
+            <ul class="price-features">
+              <li><span class="check">✓</span> Unlimited pages</li>
+              <li><span class="check">✓</span> Full product design system</li>
+              <li><span class="check">✓</span> SaaS / App development</li>
+              <li><span class="check">✓</span> Performance engineering</li>
+              <li><span class="check">✓</span> Dedicated project manager</li>
+              <li><span class="check">✓</span> Unlimited revisions</li>
+              <li><span class="check">✓</span> 12-month support SLA</li>
+            </ul>
+            <a href="#contact" class="btn-outline">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ TESTIMONIALS ░░ -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Social Proof</span>
+          <h2 class="section-title">
+            Clients Love<br /><em>What We Build</em>
+          </h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal-up" data-delay="0">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Nexus Studio delivered a product that completely transformed our
+              online presence. Revenue up 340% in three months."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">AK</div>
+              <div>
+                <strong>Ahmed Khan</strong>
+                <span>CEO, Luminary Ventures</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal-up" data-delay="150">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "The attention to detail is unmatched. Our app received 4.9 stars
+              on launch day. The team was professional, fast, and brilliant."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">SR</div>
+              <div>
+                <strong>Sara Raza</strong>
+                <span>Founder, FlowTask App</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal-up" data-delay="300">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Working with Nexus Studio felt like having an in-house design and
+              engineering team. Worth every penny and then some."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">MH</div>
+              <div>
+                <strong>M. Hassan</strong>
+                <span>CTO, DataPulse Inc.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CTA BANNER ░░ -->
+    <section class="cta-banner" id="contact">
+      <div class="cta-bg-orb"></div>
+      <div class="container">
+        <div class="cta-inner reveal-up">
+          <span class="section-tag">Ready?</span>
+          <h2 class="cta-title">
+            Your next big<br />
+            <em>digital chapter</em><br />
+            starts here.
+          </h2>
+          <div class="cta-actions">
+            <a
+              href="mailto:hello@nexusstudio.com"
+              class="btn-primary btn-large"
+            >
+              <span>Start Your Project</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+            <span class="cta-note">No commitment. Free consultation.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <span class="logo-mark">N</span>
+              <span class="logo-text">Nexus Studio</span>
+            </a>
+            <p>
+              Crafting extraordinary digital experiences for forward-thinking
+              brands.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <span class="footer-heading">Services</span>
+              <a href="#services">Web Design</a>
+              <a href="#services">Mobile Apps</a>
+              <a href="#services">UI/UX Design</a>
+              <a href="#services">E-Commerce</a>
+            </div>
+            <div class="footer-col">
+              <span class="footer-heading">Company</span>
+              <a href="#about">About</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 Nexus Studio. All rights reserved.</span>
+          <span>Made with ✦ precision</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
