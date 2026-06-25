@@ -1,5 +1,7 @@
 # Nexus Studio
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Site-7c3aed?style=for-the-badge&logo=github&logoColor=white)](https://rana-haseeb.github.io/Responsive_Landing_Page/)
+
 An elegant, responsive landing page for a fictional digital studio. The page blends editorial styling, smooth motion, and a premium dark visual system to present services, pricing, testimonials, and a call to action.
 
 ## Features
